@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  background-image: url("../imgs/fotoboa-8zj1kfW5D-transformed.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.terra{
+  position: relative;
+  top: 300px;
+  left: 500px;
+}
+.acdc{
+  position: relative;
+  top: 300px;
+  left: 515px;
+  height: 50px;
+  width: 100px;
+
+}

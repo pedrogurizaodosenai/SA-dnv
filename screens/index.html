@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <
+    <link rel="stylesheet" href="../Css/login.css">
+
+    >
+    <script src="../Js/script2.js" defer></script>
+</head>
+<body>
+    
+    <div id="video-fundo">
+        <video id="video-animacao" src="../animacoes/animaçao3.mp4.mp4" muted playsinline loop autoplay></video>
+    </div>
+
+    
+    <div class="container-box2" id="container-box2">
+        <h2>Bem-vindo de volta</h2>
+
+    
+        <input class="input-email" type="email" placeholder="Insira seu e-mail" id="email" required><br><br>
+
+        >
+        <input class="input-senha1" type="password" placeholder="Senha" id="senha1" required><br><br>
+
+        
+        <button onclick="logar()">Logar</button><br><br>
+
+        
+        <p id="mensagem" style="color: red;"></p>
+
+        
+        <p>Não possui conta? <a href="criarConta.html">Crie uma agora</a></p>
+    </div>
+
+
+    <div id="video-container" class="hidden">
+        <video id="confirmacao-video" src="../animacoes/animaçao3.mp4.mp4" autoplay muted playsinline></video>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Conta</title>
+
+    <link rel="stylesheet" href="../Css/Criacao.css">
+
+    <script src="../Js/script.js" defer></script>
+    <script src="../Js/api.js"defer></script>
+</head>
+<body>
+    
+    <div id="video-fundo">
+        <video id="video-animacao" src="../animacoes/animcao2.mp4" muted playsinline></video>
+    </div>
+
+    <div class="container-box2" id="container-box2">
+        <input class="input-email" type="text" placeholder="Insira seu e-mail" id="email" required><br><br>
+        <input class="input-nome" type="text" placeholder="Insira seu nome completo" id="nomeCompleto" required><br><br>
+        <input class="input-senha1" type="password" placeholder="Senha" id="senha1" required><br><br>
+        <input class="input-senha2" type="password" placeholder="Confirme sua senha" id="senha2" required><br><br>
+        
+        <input type="date" id="dataNascimento" required><br><br>
+    
+        <button id="Csenha" onclick="criarConta()">Confirme sua conta</button><br><br>
+  
+        
+        <p id="mensagem" style="color: red;"></p>
+    </div>
+
+    <div id="video-container" class="hidden">
+        <video id="confirmacao-video" src="../animacoes/animcao2.mp4" autoplay muted playsinline></video>
+    </div>
+</body>
+</html>

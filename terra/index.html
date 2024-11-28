@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Cycle with Positioning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="image-container">
+  
+        <img class="cycle-image" src="../imgs/intheend.jpg" alt="Image 1" style="opacity: 1; position: absolute; top: 100px; left: 750px; width: 100px; height: auto; border-radius: 50%;">
+        <img class="cycle-image" src="../imgs/numb.jpg" alt="Image 2" style="opacity: 1; position: absolute; top: 300px; left: 750px; width: 100px; height: auto; border-radius: 50%;">
+        <img class="cycle-image" src="../imgs/machine.jpg" alt="Image 3" style="opacity: 0; position: absolute; top: 150px; left: 940px; width: 100px; height: auto; border-radius: 50%;">
+        <img class="cycle-image" src="../imgs/faint.jpg" alt="Image 4" style="opacity: 0; position: absolute; top: 300px; left: 1050px; width: 100px; height: auto; border-radius: 50%;">
+        <img class="cycle-image" src="../imgs/crawling.jpg" alt="Image 5" style="opacity: 0; position: absolute; top: 300px; left: 1200px; width: 100px; height: auto; border-radius: 50%;">
+        <img class="cycle-image" src="../imgs/lyving.jpg" alt="Image 6" style="opacity: 0; position: absolute; top: 100px; left: 1100px; width: 100px; height: auto; border-radius: 50%;">
+        <img class="cycle-image" src="../imgs/newdivide.jpg" alt="Image 7" style="opacity: 0; position: absolute; top: 350px; left: 1350px; width: 100px; height: auto; border-radius: 50%;">
+        <img class="cycle-image" src="../imgs/breaking.jpg" alt="Image 8" style="opacity: 0; position: absolute; top: 150px; left: 1220px; width: 100px; height: auto; border-radius: 50%;">
+        <img class="cycle-image" src="../imgs/one.jpg" alt="Image 7" style="opacity: 0; position: absolute; top: 350px; left: 1500px; width: 100px; height: auto; border-radius: 50%;">
+        <img class="cycle-image" src="../imgs/burn.jpg" alt="Image 8" style="opacity: 0; position: absolute; top: 110px; left: 1400px; width: 100px; height: auto; border-radius: 50%;">
+        
+        <img class="cycle-image" src="../imgs/up.jpg" alt="Image 5" style="opacity: 0; position: absolute; top: 300px; left: 1600px; width: 100px; height: auto; border-radius: 50%;">
+        <img class="cycle-image" src="../imgs/pts.jpg" alt="Image 6" style="opacity: 0; position: absolute; top: 100px; left: 1600px; width: 100px; height: auto; border-radius: 50%;">
+        <img class="cycle-image" src="../imgs/roads.jfif" alt="Image 7" style="opacity: 0; position: absolute; top: 350px; left: 1750px; width: 100px; height: auto; border-radius: 50%;">
+        <img class="cycle-image" src="../imgs/dont.jpg" alt="Image 8" style="opacity: 0; position: absolute; top: 150px; left: 1720px; width: 100px; height: auto; border-radius: 50%;">
+        <img class="cycle-image" src="../imgs/figure.jfif" alt="Image 7" style="opacity: 0; position: absolute; top: 350px; left: 1900px; width: 100px; height: auto; border-radius: 50%;">
+        <img class="cycle-image" src="../imgs/pushine.jfif" alt="Image 8" style="opacity: 0; position: absolute; top: 110px; left: 1900px; width: 100px; height: auto; border-radius: 50%;">
+       
+        <img class="cycle-image" src="../imgs/intheend.jpg" alt="Image 3" style="opacity: 0; position: absolute; top: 100px; left: 450px; width: 100px; height: auto; border-radius: 50%;">
+        <img class="cycle-image" src="../imgs/numb.jpg" alt="Image 4" style="opacity: 0; position: absolute; top: 300px; left: 500px; width: 100px; height: auto; border-radius: 50%;">
+        <img class="cycle-image" src="../imgs/machine.jpg" alt="Image 5" style="opacity: 0; position: absolute; top: 300px; left: 650px; width: 100px; height: auto; border-radius: 50%;">
+        <img class="cycle-image" src="../imgs/faint.jpg" alt="Image 6" style="opacity: 0; position: absolute; top: 100px; left: 650px; width: 100px; height: auto; border-radius: 50%;">
+
+    </div>
+    <canvas id="c"></canvas>
+    <audio id="background-music" autoplay loop>
+        <source src="../imgs/numb.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    
+    
+
+    <script src="three.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

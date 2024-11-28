@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/likingPark.css">
+    <title>Tocar Música</title>
+</head>
+<body>
+    <div class="container">
+        <a href="inicio.html">
+        <h1>voltar ao inicio</h1>
+</a>
+        <div class="galeria">
+            <div>
+                <audio id="musica" src="../imgs/Numb (Official Music Video) [4K UPGRADE] – Linkin Park.mp3" preload="auto"></audio>
+                <img class="foto1" src="../imgs/numb.jpg" alt="Slipknot Psychosocial">
+                <p class="psycossocial">Numb</p>
+            </div>
+            <div>
+                <audio id="musica2" src="../imgs/videoplayback.m4a" preload="auto"></audio>
+                <img class="foto2" src="../imgs/machine.jpg" alt="Slipknot Duality">
+                <p class="duality">the emptiness machine</p>
+            </div>
+            <div>
+                <audio id="musica3" src="../imgs/In The End [Official HD Music Video] - Linkin Park.mp3" preload="auto"></audio>
+                <img class="foto3" src="../imgs/intheend.jpg" alt="Slipknot Before I Forget">
+                <p class="beforeforgeter">in the end</p>
+            </div>
+            <div>
+                <audio id="musica4" src="../imgs/Crawling [Official HD Music Video] - Linkin Park.mp3" preload="auto"></audio>
+                <img class="foto4" src="../imgs/crawling.jpg" alt="Slipknot Wait and Bleed">
+                <p class="custer">crawling</p>
+            </div>
+            <div>
+                <audio id="musica5" src="../imgs/Breaking the Habit (Official Music Video) [HD UPGRADE] – Linkin Park.mp3]" preload="auto"></audio>
+                <img class="foto5" src="../imgs/breaking.jpg" alt="Slipknot The Devil In I">
+                <p class="eyeless">breaking the Habit</p>
+            </div>
+            <div>
+                <audio id="musica6" src="../imgs/Faint (Official Music Video) [4K UPGRADE] – Linkin Park.mp3" preload="auto"></audio>
+                <img class="foto6" src="../imgs/faint.jpg" alt="Slipknot Spit It Out">
+                <p class="spitItOut">faint/p>
+            </div>
+        </div>
+
+    
+        <div class="controles">
+            <button class="stop" id="pauseButton">Pausar</button>
+            <button class="botaoreset" id="resetButton">Resetar</button>
+        </div>
+
+        
+        <input class="regulador" type="range" id="progressBar" value="0" min="0" max="100" step="1">
+
+        
+        <div class="timer">
+            <p>Tempo: <span id="currentTime">00:00</span> / <span id="totalTime">00:00</span></p>
+        </div>
+    </div>
+
+    <script src="../Js/slipknot.js"></script>
+</body>
+</html>

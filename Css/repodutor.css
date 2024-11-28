@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.player-container {
+    text-align: center;
+    max-width: 400px;
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.album-art {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.song-info {
+    margin-bottom: 20px;
+}
+
+.song-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.artist-name {
+    font-size: 1em;
+    color: #b3b3b3;
+    margin: 5px 0 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;  /* Ensures controls are stacked vertically */
+}
+
+.play-btn {
+    background-color: #1db954;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(29, 185, 84, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-btn img {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+#play-icon {
+    display: block;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    color: #b3b3b3;
+    font-size: 0.9em;
+}
+
+#progressBar {
+    flex: 1;
+    margin: 0 10px;
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #404040;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px; /* Adds space between the play button and the progress bar */
+}
+
+#progressBar::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #1db954;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(29, 185, 84, 0.8);
+}
+
+#progressBar::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #1db954;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(29, 185, 84, 0.8);
+}
+
+#currentTime, #totalTime {
+    font-size: 0.8em;
+    color: #b3b3b3;
+    width: 50px;
+    text-align: center;
+}

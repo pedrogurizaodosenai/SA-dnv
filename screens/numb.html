@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="../Css/repodutor.css">
+</head>
+<body>
+    <div class="player-container">
+        <img src="../imgs/numb.jpg" alt="Capa do álbum" class="album-art">
+        <div class="song-info">
+            <h2 class="song-title">Título da Música</h2>
+            <p class="artist-name">Nome do Artista</p>
+        </div>
+        <div class="controls">
+            <button class="play-btn" id="play-pause-btn">
+                <img id="play-icon" src="../imgs/play.png" alt="Play">
+                <img id="pause-icon" src="../imgs/pause.png" alt="Pause" style="display: none;">
+            </button>
+            <div class="progress-container">
+                <span id="currentTime">0:00</span>
+                <input type="range" id="progressBar" value="0" max="100">
+                <span id="totalTime">3:00</span>
+            </div>
+        </div>
+        <audio id="audio-player" src="../imgs/Numb (Official Music Video) [4K UPGRADE] – Linkin Park.mp3"></audio>
+
+    </div>
+    
+    <script src="../Js/reprodutor.js"></script>
+</body>
+</html>

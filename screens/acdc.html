@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/acdc.css">
+    <title>Tocar Música</title>
+</head>
+<body>
+    <div class="container">
+        <a href="inicio.html">
+        <h1>voltar ao inicio</h1>
+</a>
+        <div class="galeria">
+            <div>
+                <audio id="musica" src="../imgs/ACDC - Highway to Hell (Live At River Plate, December 2009).mp3" preload="auto"></audio>
+                <img class="foto1" src="../imgs/highway.jpg" alt="Slipknot Psychosocial">
+                <p class="psycossocial">higway to hell(ao vivo)</p>
+            </div>
+            <div>
+                <audio id="musica2" src="../imgs/ACDC - Back In Black (Official Video).mp3" preload="auto"></audio>
+                <img class="foto2" src="../imgs/backinblack.jpg" alt="Slipknot Duality">
+                <p class="duality">back in Black</p>
+            </div>
+            <div>
+                <audio id="musica3" src="../imgs/ACDC - Hells Bells (Official Video).mp3" preload="auto"></audio>
+                <img class="foto3" src="../imgs/runto.jpg" alt="Slipknot Before I Forget">
+                <p class="beforeforgeter">hell Bells</p>
+            </div>
+            <div>
+                <audio id="musica4" src="../imgs/ACDC - T.N.T..mp3" preload="auto"></audio>
+                <img class="foto4" src="../imgs/tnt.jpg" alt="Slipknot Wait and Bleed">
+                <p class="custer">T.N.T</p>
+            </div>
+            <div>
+                <audio id="musica5" src="../imgs/ACDC - Live At River Plate 2009 (Full Concert in Standard Tuning).mp3" preload="auto"></audio>
+                <img class="foto5" src="../imgs/eternity.jfif" alt="Slipknot The Devil In I">
+                <p class="eyeless">live at river plate 2009</p>
+            </div>
+            <div>
+                <audio id="musica6" src="../imgs/ACDC - Thunderstruck (Official Video).mp3" preload="auto"></audio>
+                <img class="foto6" src="../imgs/thunderstruck.jpg" alt="Slipknot Spit It Out">
+                <p class="spitItOut">thunderstruck</p>
+            </div>
+        </div>
+
+        
+        <div class="controles">
+            <button class="stop" id="pauseButton">Pausar</button>
+            <button class="botaoreset" id="resetButton">Resetar</button>
+        </div>
+
+        
+        <input class="regulador" type="range" id="progressBar" value="0" min="0" max="100" step="1">
+
+        
+        <div class="timer">
+            <p>Tempo: <span id="currentTime">00:00</span> / <span id="totalTime">00:00</span></p>
+        </div>
+    </div>
+    
+
+    <script src="../Js/slipknot.js"></script>
+</body>
+</html>

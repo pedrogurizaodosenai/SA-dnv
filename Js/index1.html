@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baixar MP3</title>
+</head>
+<body>
+    <h2>Baixar MP3 de um vídeo</h2>
+    <input type="text" id="videoUrl" placeholder="Insira o link do vídeo" />
+    <button onclick="downloadMP3()">Baixar MP3</button>
+
+    <script>
+        async function downloadMP3() {
+            const url = document.getElementById('videoUrl').value;
+            if (!url) {
+                alert("Por favor, insira uma URL de vídeo.");
+                return;
+            }
+            
+            const downloadUrl = `/download?url=${encodeURIComponent(url)}`;
+            window.location.href = downloadUrl;
+        }
+    </script>
+</body>
+</html>

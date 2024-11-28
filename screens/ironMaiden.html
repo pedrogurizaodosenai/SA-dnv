@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/ironMainden.css">
+    <title>Tocar Música</title>
+</head>
+<body>
+    <div class="container">
+        <a href="inicio.html">
+        <h1>voltar ao inicio</h1>
+</a>
+        <div class="galeria">
+            <div>
+                <audio id="musica" src="../imgs/Iron Maiden - From Here To Eternity (Official Video).mp3" preload="auto"></audio>
+                <img class="foto1" src="../imgs/eternity.jfif" alt="Slipknot Psychosocial">
+                <p class="psycossocial">from here to eternity</p>
+            </div>
+            <div>
+                <audio id="musica2" src="../imgs/Iron Maiden - The Number Of The Beast (Official Video).mp3" preload="auto"></audio>
+                <img class="foto2" src="../imgs/run to the hills.jpg" alt="Slipknot Duality">
+                <p class="duality">the numer of the Beast</p>
+            </div>
+            <div>
+                <audio id="musica3" src="../imgs/run to the hills.jpg" preload="auto"></audio>
+                <img class="foto3" src="../imgs/runto.jpg" alt="Slipknot Before I Forget">
+                <p class="beforeforgeter">run to the hills</p>
+            </div>
+            <div>
+                <audio id="musica4" src="../imgs/Iron Maiden - The Trooper (Official Video).mp3" preload="auto"></audio>
+                <img class="foto4" src="../imgs/tropper.avif" alt="Slipknot Wait and Bleed">
+                <p class="custer">the tropper</p>
+            </div>
+            <div>
+                <audio id="musica5" src="../imgs/Iron Maiden - From Here To Eternity (Official Video).mp3" preload="auto"></audio>
+                <img class="foto5" src="../imgs/eternity.jfif" alt="Slipknot The Devil In I">
+                <p class="eyeless">from here to eternity</p>
+            </div>
+            <div>
+                <audio id="musica6" src="../imgs/Fear of the Dark (2015 Remaster).mp3" preload="auto"></audio>
+                <img class="foto6" src="../imgs/dark.jpg" alt="Slipknot Spit It Out">
+                <p class="spitItOut">fear of the Dark</p>
+            </div>
+        </div>
+
+        
+        <div class="controles">
+            <button class="stop" id="pauseButton">Pausar</button>
+            <button class="botaoreset" id="resetButton">Resetar</button>
+        </div>
+
+        
+        <input class="regulador" type="range" id="progressBar" value="0" min="0" max="100" step="1">
+
+        
+        <div class="timer">
+            <p>Tempo: <span id="currentTime">00:00</span> / <span id="totalTime">00:00</span></p>
+        </div>
+    </div>
+
+    <script src="../Js/slipknot.js"></script>
+</body>
+</html>

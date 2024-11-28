@@ -1,0 +1,135 @@
+
+#video-fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+#video-fundo video {
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+}
+
+
+.container-box2 {
+    backdrop-filter: blur(15px); 
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px #ffffff;
+    border-radius: 20px;
+    width: 320px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+    z-index: 1;
+    color: white;
+    height: 500px;
+    left: 30%;
+}
+
+
+.input-email, .input-nome, .input-senha1, .input-senha2, .nomeCompleto {
+    width: 100%;
+    height: 30px; 
+    margin-bottom: -    20px; 
+    padding: 8px; 
+    background-color: rgba(255, 255, 255, 0.3); 
+    border-radius: 12px;
+    border: 1px solid #ffffff; 
+    color: white; 
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.input-email:focus, .input-nome:focus, .input-senha1:focus, .input-senha2:focus {
+    border-color: #00bcd4; 
+    background-color: rgba(0, 188, 212, 0.2);
+    outline: none;
+}
+
+
+input[type="date"] {
+    width: 100%;
+    height: 30px; 
+    margin-bottom: 3px; 
+    padding: 8px; 
+    background-color: rgba(255, 255, 255, 0.3); 
+    border-radius: 12px;
+    border: 1px solid #ffffff; 
+    color: white; 
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00bcd4; 
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px; 
+}
+
+button:hover {
+    background-color: #008c99; 
+}
+
+button:active {
+    background-color: #007d87; 
+}
+
+button {
+    border-radius: 12px;
+    border: none;
+    border-color: white;
+    padding: 20px;
+    position: relative;
+    background-color: transparent;
+}
+
+button:hover {
+    background-color: green;
+    animation-delay: 10.5s;
+}
+
+#video-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 10;
+}
+
+#video-container video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.hidden {
+    display: none;
+}
+
+input::placeholder {
+    color: white; 
+}

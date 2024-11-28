@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/slipknot.css">
+    <title>Tocar Música</title>
+</head>
+<body>
+    <div class="container">
+        <a href="inicio.html">
+        <h1>voltar ao inicio</h1>
+</a>
+        <div class="galeria">
+            <div>
+                <audio id="musica" src="../imgs/Slipknot - Psychosocial [OFFICIAL VIDEO] [HD].mp3" preload="auto"></audio>
+                <img class="foto1" src="../imgs/psycossocial.jpg" alt="Slipknot Psychosocial">
+                <p class="psycossocial">Psycossocial</p>
+            </div>
+            <div>
+                <audio id="musica2" src="../imgs/videoplayback.m4a" preload="auto"></audio>
+                <img class="foto2" src="../imgs/duality.jpg" alt="Slipknot Duality">
+                <p class="duality">Duality</p>
+            </div>
+            <div>
+                <audio id="musica3" src="../imgs/Before Forget.m4a" preload="auto"></audio>
+                <img class="foto3" src="../imgs/before.jpg" alt="Slipknot Before I Forget">
+                <p class="beforeforgeter">Before I Forget</p>
+            </div>
+            <div>
+                <audio id="musica4" src="../imgs/Slipknot - Custer (Audio).mp3" preload="auto"></audio>
+                <img class="foto4" src="../imgs/custer.jpg" alt="Slipknot Wait and Bleed">
+                <p class="custer">Custer</p>
+            </div>
+            <div>
+                <audio id="musica5" src="../imgs/Slipknot - Eyeless (Audio).mp3" preload="auto"></audio>
+                <img class="foto5" src="../imgs/eyeless.jfif" alt="Slipknot The Devil In I">
+                <p class="eyeless">Eyeless</p>
+            </div>
+            <div>
+                <audio id="musica6" src="../imgs/Slipknot - The Devil In I [OFFICIAL VIDEO].mp3" preload="auto"></audio>
+                <img class="foto6" src="../imgs/thedevil.jpg" alt="Slipknot Spit It Out">
+                <p class="spitItOut">t  he devil in</p>
+            </div>
+        </div>
+
+        
+        <div class="controles">
+            <button class="stop" id="pauseButton">Pausar</button>
+            <button class="botaoreset" id="resetButton">Resetar</button>
+        </div>
+
+        
+        <input class="regulador" type="range" id="progressBar" value="0" min="0" max="100" step="1">
+
+        
+        <div class="timer">
+            <p>Tempo: <span id="currentTime">00:00</span> / <span id="totalTime">00:00</span></p>
+        </div>
+    </div>
+
+    <script src="../Js/slipknot.js"></script>
+</body>
+</html>
